@@ -39,13 +39,13 @@ library
                , Data.CDCL
 
   build-depends: base >= 4.12 && < 4.19
-               , containers >= 0.6 && < 0.7
+               , containers >= 0.6 && < 0.8
                , hashable >= 1.3 && < 1.5
                , hedgehog >= 1.0 && < 1.5
-               , logict >= 0.7 && < 0.8
-               , mtl >= 2.2 && < 2.3
-               , primitive >= 0.7 && < 0.8
-               , transformers >= 0.5 && < 0.6
+               , logict >= 0.7 && < 0.9
+               , mtl >= 2.2 && < 2.3.2
+               , primitive >= 0.7 && < 0.10
+               , transformers >= 0.5 && < 0.7
                , unordered-containers >= 0.2 && < 0.3
 
   ghc-options: -Wall -Wextra
@@ -66,7 +66,7 @@ test-suite examples
                , split >= 0.2 && < 0.3
                , relude >= 0.6 && < 1.3
                , unordered-containers >= 0.2 && < 0.3
-               , tasty >= 1.2 && < 1.5
+               , tasty >= 1.2 && < 1.6
                , tasty-discover
                , tasty-hspec
 
@@ -87,15 +87,14 @@ test-suite test
   main-is:  Main.hs
 
   build-depends: base
-               , containers >= 0.6 && < 0.7
+               , containers >= 0.6 && < 0.8
                , hashable >= 1.3 && < 1.5
                , hedgehog >= 1.0 && < 1.5
                , hspec >= 2.7 && < 2.12
                , holmes
-               , primitive >= 0.7 && < 0.8
-               , transformers >= 0.5 && < 0.6
-               , tasty >= 1.2 && < 1.5
-               , tasty-discover
+               , primitive >= 0.7 && < 0.10
+               , transformers >= 0.5 && < 0.7
+               , tasty >= 1.2 && < 1.6
                , tasty-hedgehog
                , tasty-hspec
 
